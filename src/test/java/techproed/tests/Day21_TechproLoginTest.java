@@ -11,18 +11,21 @@ public class Day21_TechproLoginTest {
 
     @Test
     public void loginTest() {
-        Driver.getDriver().get(ConfigReader.getProperty("techpro_test_url"));
-
         TechproLoginPage techproLoginPage = new TechproLoginPage();
+        TechproHomePage techproHomePage = new TechproHomePage();
+
+        Driver.getDriver().get(ConfigReader.getProperty("techpro_test_url"));
 
         techproLoginPage.userName.sendKeys(ConfigReader.getProperty("techpro_test_username"));
         techproLoginPage.password.sendKeys(ConfigReader.getProperty("techpro_test_password"));
         techproLoginPage.submitButton.click();
 
-        TechproHomePage techproHomePage=new TechproHomePage();
 
         Assert.assertTrue(techproHomePage.homeHeader.isDisplayed());
         techproHomePage.homeLogoutButton.click();
+
+        //Cikis olduguna dair dogrulama yap
+        Assert.assertTrue(techproLoginPage.submitButton.isDisplayed());
 
         Driver.closeDriver();
 
