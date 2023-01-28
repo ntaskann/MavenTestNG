@@ -7,13 +7,17 @@ public class Day19_TestNGAnnotations {
     /*
          @Test : Test case ousturmak icin kullanilir
          @Before ve @After : 5 Before 5 After anotations var
-         suite > tests > grup > class > method
+         suite > tests > group > class > method
+
          @BeforeSuite : her bir test suite den once 1 sefer calisir
          @AfterSuite : her bir test suiteden sonra 1 sefer calisir
+
          @BeforeTest : her bir testden once(TEST CASE ILE KARISTIRILMAMALI) 1 sefer calisir
          @AfterTest : her bir testden sonra(TEST CASE ILE KARISTIRILMAMALI) 1 sefer calisir
+
          @BeforeClass: her bir classdan once 1 sefer calisir
          @AfterClass: her bir classdan sonra 1 sefer calisir
+
          @BeforeMethod: her bir @Test annotationdan once tek sefer calisir. JUnitdeki karsiligi @Before
          @AfterMethod: her bir @Test annotationdan sonra tek sefer calisir. JUnitdeki karsiligi @After
     -------------------------------------------------------------------------------------------
@@ -83,7 +87,7 @@ public class Day19_TestNGAnnotations {
         System.out.println("Test 2");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = false)// Ignore a gore daha guclu . Run tusunu bile kaldırır
     public void test3() {
         System.out.println("Test 3");
     }

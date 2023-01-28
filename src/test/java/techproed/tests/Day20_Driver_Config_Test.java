@@ -9,7 +9,6 @@ public class Day20_Driver_Config_Test {
 
     @Test
     public void firstTest() {
-
         //amazon a git
         //driver -> Driver.getDriver()
         //ConfigReader.getProperty("amazon_url") -> https://www.amazon.com
@@ -18,5 +17,7 @@ public class Day20_Driver_Config_Test {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Amazon"));
         //close driver
         Driver.closeDriver();
+
+
     }
 }

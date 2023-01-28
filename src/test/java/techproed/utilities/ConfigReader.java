@@ -18,7 +18,7 @@ public class ConfigReader {
             properties = new Properties();
     //configuration.property dosyasindaki datalari yukler
             properties.load(fileInputStream);
-    //file input steam i kapatilir
+    //file input stream i kapatilir
             fileInputStream.close();
         } catch (Exception e) {
             e.printStackTrace();
