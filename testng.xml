@@ -2,15 +2,34 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="/Users/techproed/IdeaProjects/B103TestNGProject/src/test/java/techproed/tests/smoketests">
-
-        <packages>
-            <!--            NOT: name gecerli bir klasor ismi olmali.
-                                 klasorun PATH i root dosyasindan (techproed) baslamali
-                            NOT: KAYDET. SAVE. -->
-            <package name="techproed.tests.dataprovider"></package>
-            <package name="techproed.tests.smoketests"></package>
-        </packages>
-
+          name="C:/Users/asus/IdeaProjects/MavenTestNG/src/test/java/techproed/tests/dataprovider">
+        <classes>
+            <class name="techproed.tests.dataprovider.Day24_DataProviderTest1">
+                <methods>
+                    <include name="urunler"/>
+                    <include name="aramaTesti"/>
+                    <include name="googleAramasi"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.dataprovider.Day24_DataProviderTest2">
+                <methods>
+                    <include name="dataProviderTest"/>
+                    <include name="dataProviderLoginTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.dataprovider.Day24_DataProviderTest3">
+                <methods>
+                    <include name="dataProviderLoginTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.dataprovider.Day25_DataProviderTest4">
+                <methods>
+                    <include name="musteriVerileriTest"/>
+                    <include name="musteriHizmetleriVerileriTest"/>
+                    <include name="personelVerileriTest"/>
+                    <include name="customerDataTest"/>
+                </methods>
+            </class>
+        </classes>
     </test>
 </suite>

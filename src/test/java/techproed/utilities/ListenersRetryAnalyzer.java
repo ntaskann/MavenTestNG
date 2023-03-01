@@ -12,6 +12,6 @@ public class ListenersRetryAnalyzer implements IAnnotationTransformer {
     @Override
     public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
 //        Bu sinif ListenersRetry util classina baglidir
-        annotation.setRetryAnalyzer(ListenersRetry.class);
+        annotation.setRetryAnalyzer(ListenersRetry.class );
     }
 }

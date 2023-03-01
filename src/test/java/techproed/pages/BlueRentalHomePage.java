@@ -8,6 +8,7 @@ import techproed.utilities.Driver;
 public class BlueRentalHomePage {
 
     public BlueRentalHomePage() {
+
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

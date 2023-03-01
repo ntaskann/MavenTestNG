@@ -7,7 +7,9 @@
                             NOT: KAYDET. SAVE. -->
             <package name="techproed.tests.dataprovider"></package>
             <package name="techproed.tests.smoketests"></package>
+
         </packages>
+
     </test>
 </suite>
         <!-- YORUM-YAPMAK ICIN COMMAND + /  YADA CONTROL + / -->
